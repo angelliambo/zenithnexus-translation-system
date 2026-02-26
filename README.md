@@ -16,8 +16,27 @@ A powerful CLI tool for managing translations in internationalization (i18n) pro
 
 ## Installation
 
+### Global Installation
+
 ```bash
-npm install zenithnexus-translation-system
+npm install -g zenithnexus-translation-system
+```
+
+### Local Development
+
+```bash
+# Clone and install
+git clone https://github.com/angelliambo/zenithnexus-translation-system.git
+cd zenithnexus-translation-system
+npm install
+npm run build
+
+# Run locally with node
+node bin/zn.js --help
+
+# Or create a symlink
+npm link
+zn --help
 ```
 
 ## Usage

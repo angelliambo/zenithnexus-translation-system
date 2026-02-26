@@ -47,3 +47,7 @@ coverage/
 
 # Lock files (optional - comment if you want to track)
 # pnpm-lock.yaml
+
+# Documentation (ignored - for local development only)
+DEVELOPMENT.md
+AGENTS.md
