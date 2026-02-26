@@ -1,0 +1,68 @@
+{
+  "name": "zenithnexus-translation-system",
+  "version": "1.0.0",
+  "description": "Professional translation synchronization system for i18n projects",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "zn": "./bin/zn.js"
+  },
+  "files": [
+    "dist/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "cli": "node ./bin/zn.js",
+    "help": "node ./bin/zn.js --help",
+    "test": "jest",
+    "prepublishOnly": "npm run build",
+    "verify": "npm run build && npm run test"
+  },
+  "keywords": [
+    "i18n",
+    "translation",
+    "synchronization",
+    "cli",
+    "internationalization",
+    "zenithnexus"
+  ],
+  "author": "ZenithNexus",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angelliambo/ZenithNexus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angelliambo/ZenithNexus/issues"
+  },
+  "homepage": "https://github.com/angelliambo/ZenithNexus#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
